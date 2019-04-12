@@ -1,0 +1,116 @@
+@font-face {
+  font-family: googlefonts;
+  src: url("../../fonts/GoogleSans-Regular.ttf");
+}
+.main{
+    overflow-y: hidden;
+}
+.mat-card {
+ margin: auto;
+height: 420px;
+width: 350px;
+border: 0.5px solid #c6c1c1;
+ margin-top: 6%;
+margin-bottom: 6%;
+// box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.459); 
+  }
+
+.fundoo{
+    text-align: center;
+    font-family: 'googlefonts',arial,sans-serif;
+    // font: bold;
+    margin-top: 05%;
+    font-size: 150%
+}
+.f{
+    color: #4285F4;
+    font-weight: bold;
+    // font-family: 'googlefonts',arial,sans-serif;
+    text-align: center
+  }
+  .u{
+    color: #EA4335;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+    
+  }
+  .n{
+    color: #FBBC05;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  
+  }
+  .d{
+    color: #4285F4;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  
+  }
+  .o{
+    color: #34A853;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  
+  }
+  .oo{
+    color: #EA4335;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  }
+.row {
+    height:33.3vh;
+  }
+  .mat-card-title {
+    text-align: center;}
+
+
+.email{
+    width: 80%;
+    align-content: center;
+    left: 10%;
+}
+.account{
+  color: black;
+}
+.password{
+    width: 80%;
+    align-content: center;
+    left: 10%;
+}
+.mat-card-subtitle {
+    font-size: 90%;
+    text-align: center;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  .password-link{
+    color: #4285F4;
+    margin-left: 6%;
+    font-family: 'googlefonts',arial,sans-serif;
+
+  }
+  .link{
+    color: #4285F4;
+    margin-left: -18%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  #sign-button{
+    background: #1a73e8;
+    font-family: 'googlefonts',arial,sans-serif;
+    // width: 30%;
+    margin-right: -6%
+    
+  }
+  .register{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18%;
+    margin-right: 15%
+  }
+  .signin{
+    font-family: 'googlefonts',arial,sans-serif;
+  }

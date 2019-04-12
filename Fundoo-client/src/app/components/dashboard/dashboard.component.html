@@ -1,0 +1,255 @@
+<!-- 
+
+<div  >
+  <mat-toolbar class="example-toolbar">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon matTooltip="Main menu">menu</mat-icon>
+    </button>
+    <div fxFlex="2">
+      <div fxFlex="10" fxLayout="row" fxFlex.gt="500px" [style.fontSize.px]="1" matTooltip="Welcome to Fundoo Notes">
+
+        <img id="google-keep-logo" src="../../../assets/icons8-google-keep.svg" style="width:40px;height:40px" alt=""
+          aria-hidden="false" />
+        <h3 class="example-app-name" fxLayoutAlign="center center">
+          <mat-card-title class="fundoo" fxLayout="row" fxLayoutAlign="end center">
+            <span>Fundoo   </span>
+
+          </mat-card-title>
+        </h3>
+      </div>
+    </div>
+
+    <div fxFlex="72" fxLayoutAlign="end start">
+      <mat-form-field appearance="outline" fxHide.xs [style.fontSize.px]="2" class="search">
+        <button mat-icon-button class="search-button">
+          <mat-icon matTooltip="Search">search</mat-icon>
+        </button>
+
+        <input fxFlex="90" [(ngModel)]="value" (keyup)="onKeyUp($event)" matInput placeholder="Search"
+          [style.fontSize.px]="16" class="search-window" autocomplete="off" />
+      </mat-form-field>
+    </div>
+    <div fxFlex="25" class="settingbtn">
+        <button mat-icon-button color="basic" id="refresh" matTooltip="Refresh">
+          <mat-icon>refresh</mat-icon>
+        </button> 
+
+        <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        colour="basic"
+        matTooltip="settings"
+      >
+        <mat-icon
+          ><img src="../../../assets/outline-settings-24px.svg"
+        /></mat-icon>
+      </button>
+
+        <button mat-icon-button color="basic" matTooltip="Apps">
+            <mat-icon
+              ><img src="../../../assets/outline-apps-24px.svg"
+            /></mat-icon>
+          </button>
+        </div>
+  </mat-toolbar>
+
+  
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-list role="List">
+        <div>
+        <mat-list-item
+          role="listitem"
+          id="note"
+          (click)="note()"
+          (click)="headerName = 'Notes'"
+          [ngClass]="{
+            sideNavListItems: headerName != 'Fundoo Notes',
+            sideNavlistItemsColored: headerName == 'Fundoo Notes'
+          }"
+        >
+          <img id="img1" src="../../../assets/image/note.svg" />
+          Notes</mat-list-item
+        ></div>
+
+        <div>
+        <mat-list-item role="listitem" (click)="reminders()" id="rem">
+          <img id="img2" src="../../../assets/image/remainder.svg" />
+          Reminders</mat-list-item
+        ></div>
+
+        <mat-divider></mat-divider>
+        <div>
+        <p id="para">LABELS</p>
+        <mat-list-item role="listitem" (click)="openLabel()" id="lable">
+          <mat-icon id="edit">edit</mat-icon>
+          Edit label
+        </mat-list-item></div>
+
+        <mat-divider></mat-divider>
+        <div>
+        <mat-list-item role="listitem" id="arch" (click)="archive()">
+          <img id="img4" src="../../../assets/image/archieve.svg" />
+          Archive</mat-list-item
+        ></div>
+
+        <div>
+        <mat-list-item role="listitem" id="bin" (click)="trashBox()">
+          <img id="img5" src="../../../assets/image/bin.svg" />
+          Trash</mat-list-item
+        ></div>
+      </mat-list>
+    </mat-drawer>
+  
+  </mat-drawer-container> -->
+
+<!-- <div class="example-sidenav-content">
+      <p>hiiiiiiiiiiiii</p>
+    </div>
+   -->
+
+
+
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon matTooltip="Main menu">menu</mat-icon>
+    </button>
+
+    <div fxFlex="2">
+      <div fxFlex="10" fxLayout="row" fxFlex.gt="500px" [style.fontSize.px]="1" matTooltip="Welcome to Fundoo Notes">
+        <img id="google-keep-logo" src="../../../assets/icons8-google-keep.svg" fxHide.xs />
+
+        <h3 class="example-app-name" fxLayoutAlign="center center">
+          <mat-card-title class="fundoo" fxLayout="row" fxLayoutAlign="end center">
+            <span>{{message}}</span>
+          </mat-card-title>
+        </h3>
+      </div>
+    </div>
+
+    <div fxFlex="73" fxLayoutAlign="end start">
+      <mat-form-field appearance="outline" fxHide.xs [style.fontSize.px]="2" class="search">
+        <button mat-icon-button class="search-button">
+          <mat-icon matTooltip="Search">search</mat-icon>
+        </button>
+
+        <input fxFlex="90" [(ngModel)]="value" (keyup)="onKeyUp($event)" matInput placeholder="Search"
+          [style.fontSize.px]="16" class="search-window" autocomplete="off" />
+      </mat-form-field>
+    </div>
+
+    <div fxFlex="25" class="settingbtn">
+      <button mat-icon-button color="basic" id="refresh" matTooltip="Refresh" (click)="refresh()">
+        <mat-icon>refresh</mat-icon>
+      </button>
+
+      <button mat-icon-button color="basic" id="grid" fxHide.xs matTooltip="Grid view">
+        <mat-icon>
+          <img *ngIf="grid" (click)="gridChange(grid)" src="../../../assets/listView.svg" />
+          <img *ngIf="!grid" (click)="gridChange(grid)" src="../../../assets/gridView.svg" /></mat-icon>
+      </button>
+
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" colour="basic" matTooltip="settings">
+        <mat-icon><img src="../../../assets/outline-settings-24px.svg" /></mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Send feedback</button>
+        <button mat-menu-item>Help</button>
+        <button mat-menu-item>App downloads</button>
+        <button mat-menu-item>Keyboard Shortcuts</button>
+      </mat-menu>
+
+      <!-- <button mat-icon-button color="basic" matTooltip="Apps" class="apps">
+          <mat-icon
+            ><img src="../../../assets/outline-apps-24px.svg  "
+          /></mat-icon>
+        </button> -->
+
+    </div>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu1" colour="basic" matTooltip=" Fundoo Account"
+      [matTooltipClass]="'my-tooltip'" div fxLayout="row" fxLayoutAlign="end center">
+      <div mat-card-avatar class="example-header-image">
+        <mat-icon></mat-icon>
+      </div>
+    </button>
+    <mat-menu #menu1="matMenu" div fxLayout="row" fxLayoutAlign="end start" class="menu-button">
+      <button mat-fab disabled id="user-image-button">
+        <div mat-card-avatar class="example-header-image"></div>
+      </button>
+
+      <div class="profileMenu">
+        <div fxLayout="row" fxLayoutAlign="start start">
+
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center start" class="userNameinf">
+          <p>{{username}}</p>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <p class="userEmail">{{email}}</p>
+        </div>
+
+        <mat-divider></mat-divider>
+        <button mat-flat-button (click)="addAccount()">Add account</button>
+        <button class="signout" mat-flat-button (click)="signout()">
+          Sign out
+        </button>
+      </div>
+    </mat-menu>
+  </mat-toolbar>
+
+
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56" fxHide.xs class="sidenav">
+      <mat-nav-list>
+        <mat-list role="List">
+          <div [routerLinkActive]="['active']" [routerLink]="['note']" style="outline: none">
+            <mat-list-item role="listitem" id="note" (click)="note()">
+              <img id="img1" src="../../../assets/Notes.svg" />
+              Notes</mat-list-item>
+          </div>
+
+          <div style="outline: none">
+            <mat-list-item role="listitem" (click)="reminders()" id="rem">
+              <img id="img2" src="../../../assets/reminder.svg" />
+              Reminders</mat-list-item>
+          </div>
+
+          <mat-divider></mat-divider>
+          <div style="outline: none">
+            <p id="para">labels</p>
+            <mat-list-item role="listitem" (click)="openLabel()" id="lable">
+              <img id="img2" src="../../../assets/EditLabel.svg" />
+              Edit label
+            </mat-list-item>
+          </div>
+
+          <mat-divider></mat-divider>
+          <div [routerLinkActive]="['active']" [routerLink]="['archive']" style="outline: none">
+            <mat-list-item role="listitem" id="arch" (click)="archive()">
+              <img id="img4" src="../../../assets/archive.svg" />
+              Archive</mat-list-item>
+          </div>
+
+          <div [routerLinkActive]="['active']" [routerLink]="['trash']" style="outline: none">
+            <mat-list-item role="listitem" id="bin" (click)="trashBox()">
+              <img id="img5" src="../../../assets/trash.svg" />
+              Trash</mat-list-item>
+          </div>
+
+        </mat-list>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+</div>

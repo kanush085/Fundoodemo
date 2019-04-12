@@ -1,0 +1,143 @@
+<!-- <html>
+<div *ngIf="flag === true" class="body" fxLayout="row" (click)="reverseFlag()" fxLayoutAlign="space-around start"
+    fxFlex="100">
+
+    <mat-card fxFlex="45" fxFlex.xs="100" class="matcard" fxLayoutAlign="space-between center"
+        style="padding-bottom:0px;padding-top:0px">
+        <div data-text="Take a note..." class="Border" id="noteTitle" fxLayout="column" contenteditable="true"
+            class="maincard"></div>
+        <div fxLayout="row" fxLayoutAlign="end start">
+            <button mat-icon-button> -->
+<!-- <mat-icon class="check" matTooltip="New List"><img id="img2"
+                        src="../../../assets/image/outline-check_box-24px.svg" /></mat-icon> -->
+<!-- </button>
+
+            <button mat-icon-button> -->
+<!-- <mat-icon class="check" matTooltip="New List"><img id="img2"
+                        src="../../../assets/image/outline-brush-24px.svg" /></mat-icon> -->
+<!-- </button>
+
+            <button mat-icon-button> -->
+<!-- <mat-icon class="insert" matTooltip="New note with image"><img id="img2"
+                        src="../../../assets/image/outline-image-24px.svg" /></mat-icon> -->
+<!-- </button>
+        </div>
+    </mat-card>
+</div>
+<div *ngIf="flag === false" fxLayout="row" fxLayoutAlign="space-around start" fxFlex="100">
+
+    <mat-card fxLayout="column" class="matcard" fxFlex="45" fxFlexOffset.xl="20" fxFlex.xs="97"
+        [style.backgroundColor]="bgcolor">
+
+        <div fxFlex="55" fxFlexOffset.xl="20" fxFlex.xs="97" fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="Border" fxLayout="column" class="takenote">
+                <textarea class="textArea" matTextareaAutosize placeholder="Title" [formControl]="noteTitle"></textarea>
+            </div>
+            <div fxLayout="row">
+                <button mat-icon-button color="basic">
+                    <div class="barpin"> -->
+<!-- <img src="../../../assets/image/pinbar.svg" /> -->
+<!-- </div>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="Border" fxLayout="column" class="takenote">
+            <textarea class="textArea" matTextareaAutosize placeholder="Take a note..."
+                [formControl]="noteContent"></textarea>
+        </div>
+
+        <div fxFlex="10" fxLayoutAlign="start center">
+            <div fxFlex="50"> -->
+<!-- <app-iconlist (color)="changeColor($event)"></app-iconlist> -->
+<!-- </div>
+            <div fxFlex="50" fxLayout="row" fxLayoutAlign="end center">
+                <button class="addnote" mat-button (click)="addNote()">
+                    close
+                </button>
+            </div>
+        </div>
+    </mat-card>
+
+
+
+
+</div>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+<!-- TO DISPLAT TAKE NOTE  -->
+<div *ngIf="flag === true" class="body"  fxLayout="row" fxLayoutAlign="space-around start"
+    fxFlex="100">
+    <mat-card   (click)="reverseFlag()" class="matcard" fxLayoutAlign="space-between center"
+        style="padding-bottom:0px;padding-top:0px">
+        <div data-text="Take a note..." class="Border" id="noteTitle" contenteditable="true"
+            class="maincard"></div>
+        <div fxLayout="row" fxLayoutAlign="end start">
+            <button mat-icon-button>
+                <mat-icon class="check" matTooltip="New List"
+            ><img
+              id="img2"
+              src="../../../assets/new-list.svg"
+          /></mat-icon>
+            </button>
+
+            <button mat-icon-button>
+                <mat-icon class="check1" matTooltip="New List"
+            ><img id="img2" src="../../../assets/pen.svg"
+          /></mat-icon>
+            </button>
+
+            <button mat-icon-button>
+                    <mat-icon class="insert" matTooltip="New note with image"
+                ><img id="img2" src="../../../assets/image.svg"
+            /></mat-icon>
+            </button>
+        </div>
+    </mat-card>
+</div>
+
+<!-- TO DISPLAY TITLE AND TAKE A NOTE -->
+<div *ngIf="flag === false" fxLayout="row" fxLayoutAlign="space-around start" fxFlex="100">
+    <mat-card fxLayout="column" class="matcard" 
+        [style.backgroundColor]="bgcolor">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="Border" fxLayout="column" class="takenote">
+                <textarea class="textArea" matTextareaAutosize placeholder="Title" [formControl]="noteTitle"></textarea>
+            </div>
+            <div fxLayout="row">
+                <button matTooltip="Pin note" mat-icon-button color="basic">
+                    <div class="barpin">
+                          <img src="../../../assets/pinbar.svg" />
+                    </div>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="Border" fxLayout="column" class="takenote">
+            <textarea class="textArea" matTextareaAutosize placeholder="Take a note..."
+                [formControl]="noteContent"></textarea>
+        </div>
+
+        <div fxFlex="10" fxLayoutAlign="start center">
+            <div fxFlex="100">
+                <app-iconlist (color)="changeColor($event)" (archivednoteCard)="archive($event)"></app-iconlist>
+            </div>
+            <div fxFlex="20" fxLayoutAlign="end center">
+                <button class="addnote" mat-button (click)="addNote()">
+                    close
+                </button>
+            </div>
+        </div>
+    </mat-card>
+</div>

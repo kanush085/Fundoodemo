@@ -1,0 +1,127 @@
+@font-face {
+  font-family: googlefonts;
+  src: url("../../fonts/GoogleSans-Regular.ttf");
+}
+.mat-card {
+    margin: auto;
+    height: 550px;
+    width: 350px;
+    border: 0.5px solid #c6c1c1;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    // box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.459);
+    padding: 16px 20px;
+     }
+     .f{
+    color: #4285F4;
+    font-weight: bold;
+    font-family: 'googlefonts',arial,sans-serif;
+    text-align: center
+  }
+  .u{
+    color: #EA4335;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+    
+  }
+  .n{
+    color: #FBBC05;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  
+  }
+  .d{
+    color: #4285F4;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  
+  }
+  .o{
+    color: #34A853;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  
+  }
+  .oo{
+    color: #EA4335;
+    font-weight: bold;
+    // font-family: sans-serif;
+    text-align: center
+  }
+  .fundooregister{
+    //  text-align: center;
+    font-family: 'sans-serif';
+    // font: bold;
+    margin-top: 05%;
+    font-size: 130%;
+    margin-left: 0%
+  }
+  .register{
+    font-family: 'googlefonts',arial,sans-serif;
+    // font: bold;
+    margin-top: 05%;
+    font-size: 130%;
+    margin-left: 0%;
+    color: black;
+  margin-top: 2%
+  }
+  .firstname{ 
+    margin-left: 0%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  .firstnameinput{
+    width: 40%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+ .lastnameinput{
+      width: 40%;
+      font-family: 'googlefonts',arial,sans-serif;
+    }
+  .emailid{
+    margin-left: 0%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  .email{
+    width: 82%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  #passwordid {
+    margin-left: 0%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  .password{
+    width: 37%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  .confirmpassword{
+    width: 37%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  #suffix{
+    margin-top: 3%
+  }
+  .sinin-link{
+    color: #4285F4;
+    margin-left: 1%;
+    font-size: 90%;
+    font-family: 'googlefonts',arial,sans-serif;
+  }
+  #sign-button{
+    background: #1a73e8;
+    font-family: 'googlefonts',arial,sans-serif;
+    // width: 30%;
+    margin-left: 60%;
+    color: white;
+    margin-top: -4%
+  }
+  body{
+    overflow-y: hidden  
+  }
+
+  .err{
+    height: 5%;
+  }

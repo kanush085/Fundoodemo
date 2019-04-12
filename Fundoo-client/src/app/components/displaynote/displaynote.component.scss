@@ -1,0 +1,285 @@
+
+// .card{
+//   height: 15%;
+// }
+// .mat-card mat-card-title{
+//   font-size: 5mm;
+//   font-family: 'Times New Roman';
+  
+// }
+// .matcard{
+//  background-color: brown;
+//   border-radius: 2%;
+//   // margin-top: -60%;
+//   min-width: 240px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: inline-block;
+//   min-height: 122px;
+//    margin: 35px 5px 5px 270px
+// }
+// }
+// .pin{
+//   opacity: 0;
+//   &:hover{
+//   opacity: 1;
+//   }
+
+//   .btn{
+//       opacity:0.2;
+//       &:hover{
+//         opacity: 1.5;
+//       }
+    
+//   }
+// }
+// .title{
+//   font-family: 'Times New Roman';
+//   font-weight: bold;
+// }
+// .discp{
+//   font-family: sans-serif
+// }
+
+
+// .matcard{
+   
+//   border-radius: 2%;
+//   margin-top: 2%;
+//   min-width: 240px;
+//   min-height: 122px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin: 250px;
+//   background-color: coral
+// }
+////////////////////////////////////////////////////////////////
+
+
+// @font-face {
+//   font-family: googlefonts;
+//   src: url("../../fonts/GoogleSans-Regular.ttf");
+// }
+// .card{
+//   height: 15%;
+// }
+// .mat-card mat-card-title{
+//   font-size: 5mm;
+//   font-family: 'googlefonts',arial,sans-serif; 
+  
+// }
+// .matcard2{
+//   // border-radius: 2%;
+//   //   margin-top: 5%;
+//   //   min-width: 280px;
+//   //   margin-left: auto;
+//   //   margin-right: auto;
+//   //   background-color: goldenrod
+//   border-radius: 10px;
+//   margin-top: 3%;
+//   // min-width: 260px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   //  margin: 35px 5px 5px 270px;
+//   background-color: goldenrod;
+//   width:600px ;
+//   min-height: 100px;
+//   padding: 0px  
+// }
+// // .pin{
+// //     opacity: 0;
+// //     &:hover{
+// //     opacity: 1;
+// //     }
+
+// //     .btn{
+// //         opacity:0.2;
+// //         &:hover{
+// //           opacity: 1.5;
+// //         }
+    
+// //     }
+// // }
+// .title{
+//   font-family: 'googlefonts',arial,sans-serif; 
+//   font-weight: bold;
+//   padding:10px
+// }
+// .discp{
+//   font-family: 'googlefonts',arial,sans-serif; 
+//   padding: 10px
+// }
+// .icon{
+//   opacity: 0;
+// &:hover{
+// opacity: 1.4;
+// }
+// }
+// .main{
+//   max-width: 250px;
+// }
+
+
+
+// //////////////////////////////////@a
+
+
+
+// .card{
+//   height: 15%;
+// }
+// .mat-card mat-card-title{
+//   font-size: 5mm;
+//   font-family: 'Times New Roman';
+  
+// }
+// .matcard1{
+//   border-radius: 10px;
+//   background-color: forestgreen;
+//   // border-radius: 2%;
+//   margin-top: 10px;
+//   margin-bottom: 5px;
+//   min-width: 260px;
+//   margin-left: auto;
+//   margin-right: auto;
+  
+// }
+// .pin{
+//     opacity: 0;
+//     &:hover{
+//     opacity: 1;
+//     }
+
+//     .btn{
+//         opacity:0.2;
+//         &:hover{
+//           opacity: 1.5;
+//         }
+    
+//     }
+// }
+// .title{
+//   font-family: 'Times New Roman';
+//   font-weight: bold;
+//   padding: 10px 10px 10px 0px;
+// }
+// .discp{
+//   font-family: sans-serif
+// }
+// .icon{
+//   opacity: 0;
+// &:hover{
+// opacity: 1.4;
+// }
+// }
+
+// /////////////////////////////////////////////////////////////////////
+
+
+
+@font-face {
+  font-family: googlefonts;
+  src: url("../../fonts/GoogleSans-Regular.ttf");
+}
+
+.card{
+  height: 15%;
+}
+.mat-card mat-card-title{
+  font-size: 5mm;
+  font-family: 'googlefonts',arial,sans-serif;
+  
+}
+#img{
+  width: 18px;
+  height: 18px;
+}
+
+// #pin{
+//   opacity: 0;
+//   &:hover{
+//   opacity: 1;
+//   }
+
+//   .btn{
+//       opacity:0.2;
+//       &:hover{
+//         opacity: 1.5;
+//       }
+    
+//   }
+// }
+// .title{
+//   font-family: 'googlefonts',arial,sans-serif;
+//   font-weight: bold;
+//   padding-bottom: 4px
+// }
+// .discp{
+//   font-family: 'googlefonts',arial,sans-serif;
+//   word-break: break-all;
+//   padding-bottom: 4px;
+//   max-width: 240px;
+// }
+.icon{
+
+  opacity: 0;
+&:hover{
+opacity: 1.4;
+}
+}
+
+.barpin {
+  border: none;
+  outline: none;
+  user-select: none;
+  margin-top: 6px
+}
+.cardcontent{
+padding: 5px
+}
+
+
+.gridView{
+  .matcard{
+    background-color: lightcoral;
+     border-radius: 10px;
+     margin-top: 5%;
+     min-width: 260px;
+   
+     margin-left: auto;
+     margin-right: auto
+   }
+  .title{
+    font-family: 'googlefonts',arial,sans-serif;
+    font-weight: bold;
+    padding-bottom: 4px
+  }
+  .discp{
+    font-family: 'googlefonts',arial,sans-serif;
+    word-break: break-all;
+    padding-bottom: 4px;
+    max-width: 240px;
+  }
+}
+.listView{
+  .matcard{
+    background-color: lightcoral;
+     border-radius: 10px;
+     margin-top: 2%;
+     min-width: 50%;
+   
+     margin-left: auto;
+     margin-right: auto
+   }
+  .title{
+    font-family: 'googlefonts',arial,sans-serif;
+    font-weight: bold;
+    padding-bottom: 4px
+  }
+  .discp{
+    font-family: 'googlefonts',arial,sans-serif;
+    word-break: break-all;
+    padding-bottom: 2px;
+    max-width: 100%;
+  }
+}

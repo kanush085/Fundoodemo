@@ -1,0 +1,78 @@
+<!-- =============================================================== -->
+<!-- 
+<div *ngFor='let array of cards' fxLayout="row wrap" fxLayoutAlign="center center" fxLayout.xs="row"> 
+
+    <mat-card  fxFlex.xs="100" fxLayout="column"class="matcard1" fxFlex="45"
+        fxFlexOffset.xl="10">
+        <div fxFlex="80" fxFlexOffset.xl="20" fxFlex.xs="97" fxLayout="row" fxLayoutAlign="start center">
+            <div fxFlex="90" fxFlexOffset.xl="20" fxFlex.xs="97" fxLayout="row" fxLayoutAlign="start center"
+                (click)="openDialog()">
+
+                <div fxLayout="column">
+                    <div class="title">
+                        {{array.title}}
+                    </div>
+
+                    <div class="discp" contenteditable="true">
+                        {{array.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+  <app-iconlist class="icon" fxFlex="50" fxFlex.xs="90" [card]="array" [more]="archived" (archivedCard)="archive($event)" (unarchiveCard)="unarchived($event)" ></app-iconlist>
+
+    </mat-card>
+
+</div> -->
+
+
+
+
+
+<div [ngClass]="grid"  *ngFor='let array of cards' fxLayoutAlign="center center" fxLayout.xs="row">
+
+    <mat-card fxFlex.xs="100" fxLayout="column" class="matcard" fxFlex="45" fxFlexOffset.xl="10" [style.backgroundColor]="array.color">
+        <div fxFlex="55" fxFlexOffset.xl="20" fxFlex.xs="97" fxLayout="row" fxLayoutAlign="start center">
+            <div fxFlex="90" fxFlexOffset.xl="20" fxFlex.xs="97" fxLayout="row" fxLayoutAlign="start center"
+                (click)="openDialog()">
+
+                <div fxLayout="column" >
+                    <div class="title">
+                        {{array.title}}
+                    </div>
+
+                    <div class="discp" contenteditable="true">
+                        {{array.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div>
+      <mat-chip>
+          <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+      </mat-chip>
+    </div> -->
+
+        <div fxFlex="100" *ngIf="trash=='trash'" fxLayoutAlign="start center">
+            <button mat-icon-button [matMenuTriggerFor]="menu" colour="basic" matTooltip="more">
+                <img id="img" src="../../../assets/more.svg" />
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="deleteForever(array)">
+                    Delete forever
+                </button>
+                <button mat-menu-item (click)="restore(array)">Restore</button>
+            </mat-menu>
+        </div>
+
+
+
+        <!-- TO IMPORT ICONS FROM ICONLIST -->
+        <div fxFlex="100" *ngIf="trash!='trash'">
+            <app-iconlist class="icon" fxFlex="50" fxFlex.xs="90" [card]="array" [more]="archived"
+                (archivedCard)="archive($event)" (trashCard)="trashcard($event)" (unarchiveCard)="unarchived($event)"></app-iconlist>
+        </div>
+    </mat-card>
+
+</div>

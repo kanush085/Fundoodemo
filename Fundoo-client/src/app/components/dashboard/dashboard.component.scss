@@ -1,0 +1,328 @@
+@font-face {
+  font-family: googlefonts;
+  src: url("../../fonts/GoogleSans-Regular.ttf");
+}
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color:white;
+}
+.iconTitle{
+  display: flex;
+}
+.titleFundoo{
+  vertical-align: middle;
+  line-height: -45px;
+  width: 100%   
+}
+.searchBar{
+  display: flex;
+  width: 50%;
+  border-radius: 2%
+}
+
+.example-toolbar {
+  background-color: inherit;
+  border-bottom-style: ridge;
+  border-color: white;
+  outline: none;
+}
+/* .f {
+  color: $blue;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-align: center;
+}
+.u {
+  color: $red;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-align: center;
+}
+.n {
+  color: $yellow;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-align: center;
+}
+.d {
+  color: $blue;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-align: center;
+}
+.o {
+  color: $green;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-align: center;
+}
+.oo {
+  color: $red;
+  font-weight: bold;
+  font-family: "Gill Sans";
+  text-align: center;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* Assure that toolbar stay on top of the content always */
+.example-is-mobile .toolbar {
+  position: fixed;
+  z-index: 2;
+}
+.menu-button {
+  color: #757575;
+  margin-left: 0%;
+  padding: 0% 5%;
+}
+
+.search {
+  border-radius: 10%;
+  margin-left: - 28%;
+  width: 70%;
+  line-height: 2;
+  background: rgba(0, 0, 0, 0.04);
+  border: none;
+  outline: none;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: white;
+}
+
+// #refresh {
+//   margin-left: 10%;
+// }
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+// .example-is-mobile .example-toolbar {
+//   position: fixed;
+//   /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+//   z-index: 2;
+// }
+
+// h1.example-app-name {
+//   margin-left: 8px;
+// }
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+  background-color: white;
+  font-family: 'googlefonts',arial,sans-serif;
+
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+  font-family: 'googlefonts',arial,sans-serif;
+}
+.example-header-image {
+  background-image: url("../../../assets/PhotoGrid_1393513408061[1].jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 50%;
+  margin-left: -2%;
+}
+// .menu-button {
+//   width: 20%;
+// }
+
+.menu-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 45px;
+  max-width: 800px !important;
+}
+.profileMenu {
+  min-width: 230px;
+  max-width: 250px;
+
+  margin: -86px 0px -21px 21px;
+}
+.sidenav {
+  border-color: white;
+}
+
+// #rema {
+//   font-size: 20px;
+//   font-family: sans-serif;
+// }
+mat-sidenav {
+  width: 250px;
+}
+
+.search {
+  margin-left: 21%;
+
+  border: 1px;
+}
+#img1 {
+  margin-right: 10%;
+}
+#img2 {
+  margin-right: 10%;
+}
+#edit {
+  margin-right: 10%;
+}
+#img4 {
+  margin-right: 10%;
+}
+#img5 {
+  margin-right: 10%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+// .example-is-mobile .example-toolbar {
+//   position: fixed;
+//   z-index: 2;
+// }
+
+// h1.example-app-name {
+//   margin-left: 2%;
+// }
+
+  // .example-is-mobile .example-sidenav-container {
+  //   flex: 1 0 auto;
+  // }
+
+#para {
+  // margin-left: 9%;
+  padding: 15px 24px 10px;
+  color: #5f6368;
+  cursor: default;
+  letter-spacing: .07272727em;
+  font-family: 'googlefonts',arial,sans-serif;
+  font-size: .6875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.fundoo{
+  display: inline-block;
+  font-family: 'googlefonts',arial,sans-serif;
+  font-size: 22px;
+  color: #5f6368;
+  line-height: 24px;
+  padding-left: 8px;
+  position: relative;
+  top: 4.5px;
+  vertical-align: middle;
+
+}
+.active{
+  background-color: #feefc3;
+  border-radius: 0 25px 25px 0;
+  
+}
+
+
+// .settings {
+//   display: flex;
+//   flex-direction: row;
+//   float: right;
+// }
+// .apps {
+//   display: flex;
+//   flex-direction: row;
+//   width: 4%;
+// }
+
+// .example-toolbar {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+// #username {
+//   font: bold;
+//   margin-left: 40%;
+// }
+
+// .matMenu {
+//   width: 50px;
+// }
+
+// .mat-raised-button:not([class*="mat-elevation-z"]) {
+//   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+//     0 1px 5px 0 rgba(0, 0, 0, 0.12);
+//   margin-left: 36%;
+// }
+#user-image-button[_ngcontent-c1] {
+  margin-left: 6%;
+  background-image: url('../../../assets/PhotoGrid_1393513408061[1].jpg');
+  background-size: cover;
+  background-position: center;
+}
+.mat-stroked-button:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14),
+    0 0 0 0 rgba(0, 0, 0, 0.12);
+  width: 140px;
+}
+.mat-list-item
+{
+  color: #202124;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+  position: relative;
+  height: inherit;
+  border-radius: 0 25px 25px 0;
+  // background-color: yellow;
+ 
+}
+.mat-icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  width: 36px;
+}
+
+/deep/ .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: rgba(0,0,0,.08);
+  }
+  .ng-hide:not(.ng-hide-animate) {
+    /* These are just alternative ways of hiding an element */
+    display: block!important;
+    position: absolute;
+ 
+  }
+
+  .mat-list-base .mat-list-item {
+    font-size: 0.9rem;
+    font-weight: 500
+}
